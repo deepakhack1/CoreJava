@@ -1,3 +1,5 @@
+package src;
+
 public class Sum {
 
     int id;
@@ -35,7 +37,7 @@ public class Sum {
 
     public static void main(String[] args) {
 
-         //sum1 is an instance or object of a class Sum
+         //sum1 is an instance or object of a class src.Sum
         // new is always used to create an object
         //sum1 is stored in heap
 
