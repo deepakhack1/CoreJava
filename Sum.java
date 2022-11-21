@@ -1,5 +1,3 @@
-package CoreJava.src;
-
 public class Sum {
 
     int id;
@@ -8,7 +6,7 @@ public class Sum {
     //Default constructor
     Sum(){
 
-        System.out.println("core java");
+        System.out.println("hello");
 
     }
 
