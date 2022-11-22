@@ -2,7 +2,7 @@ package src;
 
 public class Sum {
 
-    int id;
+    int id ;    //class level variable
     String name ;
 
     //Default constructor
@@ -14,10 +14,11 @@ public class Sum {
 
 
     //paramterized constructor
+    //local variable
     public Sum(int id,String name){
 
-        this.id = id;
-        this.name = name;
+        id = id;
+        name = name;
     }
 
 
