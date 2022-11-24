@@ -10,7 +10,6 @@ public class StaticMethodExample {
     public static void main(String[] args) {
     //    StaticMethodExample staticMethodExample = new StaticMethodExample();
         StaticMethodExample.print();
-
     }
 
 
