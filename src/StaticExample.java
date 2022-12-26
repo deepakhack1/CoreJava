@@ -2,7 +2,7 @@ package src;
 
 public class StaticExample {
 
-     static int count = 0;
+      int count = 0;
 
      void increment(){
         count++;
