@@ -7,6 +7,7 @@ public class Temp1{
 
     //Temp1 t1 = t1;
     void show(int x,Temp1 t1){
+        System.out.println("Hello");
 
 
         System.out.println(t1.x);
