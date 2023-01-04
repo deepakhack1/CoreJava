@@ -1,6 +1,6 @@
 package src.Inheritance;
 
-class M{
+ class M{
 
     void print(){
         System.out.println("M");
@@ -8,6 +8,7 @@ class M{
 
 }
 class N extends M{
+
 
     void show(){
         System.out.println("N");
