@@ -32,6 +32,25 @@ public class StringMethods {
         String s5 = s4.trim();
         System.out.println(s5);
 
+        String s6 = "India is a good country";
+        String s7 = s6.substring(6);
+        String s8 = s6.substring(6,8);
+        System.out.println(s7);
+        System.out.println(s8);
+
+        String s9 = "Indiaia";
+        int z = s9.indexOf('i',4);
+        System.out.println(z);
+
+        int z1 = s6.indexOf("good");
+        System.out.println(z1);
+
+        int z2 = s9.lastIndexOf('a');
+        int z3 = s9.indexOf('a',5);
+
+        System.out.println(z2);
+        System.out.println(z3);
+
 
 
 
