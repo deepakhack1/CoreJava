@@ -41,8 +41,27 @@ public class EqualsMethod {
         String s7 = s5.replace("good","best");
         System.out.println(s7);
 
+        String s8 = "Not immutable";
+        String s9 = new String("not immutable");
+        boolean b = s8.contentEquals(s9);
+        System.out.println(b);
+
+        boolean retVal = s8.endsWith("Not");
+        System.out.println(retVal);
 
 
+        char ch[] ={'s','u','r','y','a'};
+        String str = new String(ch);
+        System.out.println(str);
+
+        String str1 = String.valueOf(ch);
+        System.out.println(str1);
+
+        StringBuilder sb = new StringBuilder();
+        for(char ch1 : ch){
+            sb.append(ch1);
+        }
+        System.out.println(sb);
 
 
 
