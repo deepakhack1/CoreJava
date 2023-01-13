@@ -1,0 +1,194 @@
+class demo1 {
+    public static void main(String args[])
+    {
+        String str1 = "java";
+        char arr[] = { 'j', 'a', 'v', 'a', ' ', 'p',
+        'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g' };
+        String str2 = new String(arr);
+        System.out.println(str1);  //java
+        System.out.println(str2); //java programming
+    }
+}
+
+
+
+class demo2 {
+    public static void main(String args[])
+    {
+        String str1 = "";
+        char arr[] = { 'j', 'a', 'v', 'a', ' ', 'p',
+        'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g' };
+        String str2 = new String(arr);
+        String str3 = new String(str2);
+
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str3);
+    }
+}
+
+
+class demo3 {
+    public static void main(String args[])
+    {
+        byte[] arr = { 97, 98, 99, 100, 101 };
+        String str2 = new String(arr);
+
+        System.out.println(str2);
+    }
+}
+
+
+
+
+class demo4 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        char ch = str.charAt(2);
+        System.out.println(ch);
+    }
+}
+
+
+
+class demo5 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        char arr[] = new char[10];
+        str.getChars(0, 4, arr, 0);
+        System.out.println(arr);
+    }
+}
+
+
+class demo6 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        char arr[] = new char[20];
+        arr = str.toCharArray();
+        System.out.println(arr);
+    }
+}
+
+
+
+class demo7 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        String str1 = "Java Programming";
+
+        String str2 = str1;
+        if (str.equals(str1))
+            System.out.println("Equal Case 1");
+        if (str == str1)
+            System.out.println("Equal Case 2");
+    }
+}
+
+
+
+class demo8 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        String str1 = "Programminggggg";
+
+        if (str.regionMatches(5, str1, 0, 11))
+            System.out.println("Same");
+    }
+}
+
+
+class demo9 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        String str1 = "Java";
+        if (str.startsWith("J"))
+            System.out.println("Start Same");
+
+        if (str.endsWith("T"))
+            System.out.println("End Same");
+    }
+}
+
+
+
+class demo10 {
+    public static void main(String args[])
+    {
+        String str = "JavaProgramming";
+        String str1 = "Java";
+
+        System.out.println(str.compareTo(str1));
+        System.out.println(str1.compareTo(str));
+    }
+}
+
+
+
+
+class demo11 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        String str1 = "Java";
+
+        System.out.println(str.indexOf("a"));  //1
+        System.out.println(str.indexOf("m"));   //11
+
+        System.out.println(str.lastIndexOf("a")); //10
+        System.out.println(str.lastIndexOf("m")); //12
+    }
+}
+
+
+
+class demo12 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+        String str1 = "Java";
+        String str2 = str.substring(5);
+        System.out.println(str2);   //Programming
+        System.out.println(str.substring(5, 9));  //prog
+    }
+}
+
+
+
+
+class demo13 {
+    public static void main(String args[])
+    {
+        String str = "Java Programming";
+
+        System.out.println(str.replace('a', '9')); //J9v9 Progr9mming
+    }
+}
+
+
+class demo14 {
+    public static void main(String args[])
+    {
+        String str = "Java";
+        String str1 = "Programming";
+
+        System.out.println(str.concat(str1));//JavaProgramming
+    }
+}
+
+
+//Trim removes the trailing spaces
+class demo15 {
+    public static void main(String args[])
+    {
+        String str = "    Java          Programming                  ";
+
+        System.out.println(str.trim());//Java          Programming
+    }
+}

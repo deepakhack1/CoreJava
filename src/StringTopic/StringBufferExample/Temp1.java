@@ -1,5 +1,8 @@
 package src.StringTopic.StringBufferExample;
 
+import java.util.Collections;
+import java.util.List;
+
 public class Temp1 {
 
     public static void main(String[] args) {
@@ -27,6 +30,9 @@ public class Temp1 {
         StringBuffer sb3 = new StringBuffer(5);
         System.out.println(sb3.capacity());
         sb3.append("helloGood");
+
+
+
 
         //(initialCapacity + 1 ) * 2 === (5+1)*2 = 12
         System.out.println(sb3.capacity());

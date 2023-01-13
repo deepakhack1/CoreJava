@@ -21,7 +21,30 @@ public class StringMethods2 {
 
 
 
-    }
+//                String str = "Java Programming";  // source
+//                char arr[] = new char[10];  // size 10   //destination
+//                str.getChars(0, 4, arr, 0);
+//                System.out.println(arr);   //Java(6 char space waste)
+
+//        String str = "JavaProgramming";
+//        String str1 = "Java";
+//
+//        System.out.println(str.compareTo(str1));
+//        System.out.println(str1.compareTo(str));
+
+        String str = "Java Programming";
+        String str1 = "Programminggggg";
+
+        if (str.regionMatches(5, str1, 0, 11))
+            System.out.println("Same");
+
+
+
+        }
+
+
+
+
 
 
 
