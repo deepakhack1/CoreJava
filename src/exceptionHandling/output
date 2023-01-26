@@ -1,0 +1,180 @@
+public class Test
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            System.out.printf("1");
+            int sum = 9 / 0;
+            System.out.printf("2");
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.printf("3");
+        }
+        catch(Exception e)
+        {
+            System.out.printf("4");
+        }
+        finally
+        {
+            System.out.printf("5");
+        }
+    }
+}
+
+output :- 135
+
+
+public class Test
+{
+    private void m1()
+    {
+        m2();
+        System.out.printf("1");
+    }
+    private void m2()
+    {
+        m3();
+        System.out.printf("2");
+    }
+    private void m3()
+    {
+        System.out.printf("3");
+        try
+        {
+            int sum = 4/0;
+            System.out.printf("4");
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.printf("5");
+        }
+
+
+        System.out.printf("7");
+    }
+    public static void main(String[] args)
+    {
+        Test obj = new Test();
+        obj.m1();
+    }
+}
+
+output :- 35721
+
+
+public class Test
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            System.out.printf("1");
+            int data = 5 / 0;
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.printf("2");
+            System.exit(0);
+        }
+        finally
+        {
+            System.out.printf("3");
+        }
+        System.out.printf("4");
+    }
+}
+
+output :- 12
+
+
+public class Test
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            System.out.printf("1");
+            int data = 5 / 0;
+        }
+        catch(ArithmeticException e)
+        {
+            Throwable obj = new Throwable("Sample");
+            try
+            {
+                throw obj;
+            }
+            catch (Throwable e1)
+            {
+                System.out.printf("8");
+            }
+        }
+        finally
+        {
+            System.out.printf("3");
+        }
+        System.out.printf("4");
+    }
+}
+
+output :- 1834
+
+public class Test
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            System.out.printf("1");
+            int value = 10 / 0;
+            throw new IOException();
+        }
+        catch(EOFException e)
+        {
+            System.out.printf("2");
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.printf("3");
+        }
+        catch(NullPointerException e)
+        {
+            System.out.printf("4");
+        }
+        catch(IOException e)
+        {
+            System.out.printf("5");
+        }
+        catch(Exception e)
+        {
+            System.out.printf("6");
+        }
+    }
+}
+
+output :- 13
+
+public class JavaHungry {
+    public static void main(String args[])
+    {
+        try
+        {
+            int arr[]= {1, 2, 3, 4, 5};
+            for (int i = 0; i <= 5; i++)
+            {
+                System.out.print ("Array elements are : " + arr[i] + "\n");
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println ("Exception : " + e);
+        }
+        catch (ArrayIndexOutOfBoundsException ex)
+        {
+            System.out.println ("ArrayIndexOutOfBoundsException : "+ ex);
+        }
+    }
+}
+
+output :- compilation error
