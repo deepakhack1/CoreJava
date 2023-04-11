@@ -1,18 +1,19 @@
 package src.collectionFramework;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.*;
 
 public class ArrayListTemp {
 
     public static void main(String[] args) {
 
+        int a1 = 10; //primitive data type
+         Integer integer = Integer.valueOf(a1);  //Object
+
+
         Integer a = 10;
         // int -> Integer , float -> Float , boolean -> Boolean , char -> Character ,byte --> Byte
 
-        ArrayList<Integer> arrayList = new ArrayList<>(10);
+        ArrayList<Integer> arrayList = new ArrayList<>();
 
         arrayList.add(1);
         arrayList.add(2);
@@ -46,6 +47,8 @@ public class ArrayListTemp {
         System.out.println(arrayList); //[1,4,2]
 
         Collections.sort(arrayList);
+
+        Collections.reverse(arrayList);  //[4,2,1]
 
         System.out.println(arrayList); //[1,2,4]
 
@@ -137,6 +140,28 @@ public class ArrayListTemp {
             System.out.println(integerListIterator.next());
            // System.out.println(integerListIterator.previous());
         }
+
+     // arrayList to arrays
+        final Object[] objects = arrayList2.toArray();
+
+
+        //arrays to arrayList
+        int arr[] = {1,2,3,4};
+        final List<int[]> ints =Arrays.asList(arr);
+
+        System.out.println(arrayList2);
+
+        Set<Integer> set = new LinkedHashSet<>(arrayList2);
+
+        System.out.println(set);
+
+        ArrayList<Integer> arrayList4 = new ArrayList<>(set);
+
+        Collections.sort(arrayList4);
+
+        System.out.println(arrayList4);
+
+        Collections.reverse(arrayList4);
 
 
     }
