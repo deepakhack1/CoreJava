@@ -1,4 +1,4 @@
-package src.collectionFramework;
+package src.collectionFramework.arrayList;
 
 import java.util.*;
 
