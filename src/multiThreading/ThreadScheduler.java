@@ -1,4 +1,4 @@
-package src.multipleThreading;
+package src.multiThreading;
 
 
 class Thread1 extends Thread{

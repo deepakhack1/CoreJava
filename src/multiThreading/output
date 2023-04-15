@@ -1,0 +1,91 @@
+public class OutputOfThread extends Thread {
+    private OutputOfThread() {
+        setPriority(NORM_PRIORITY);  //5
+        setPriority(MAX_PRIORITY);   //10
+        setPriority(MIN_PRIORITY);   //1
+    }
+    public void run() {
+        System.out.println("Run = " + Thread.currentThread().getPriority() + Thread.currentThread().getPriority());
+    }
+    public static void main(String[] args) {
+        OutputOfThread oft = new OutputOfThread();
+        System.out.println("Main = " + Thread.MAX_PRIORITY + Thread.MIN_PRIORITY + Thread.NORM_PRIORITY);
+        oft.start();
+    }
+}
+
+output
+Main = 1015
+Run = 11
+
+class Test extends Thread {
+public
+    void run()
+    {
+        System.out.println("Run");
+    }
+} class Myclass {
+public
+    static void main(String[] args)
+    {
+        Test t = new Test();
+        t.start();
+        System.out.println("Main");
+    }
+}
+
+Output
+Depends on JVM
+
+
+class Test implements Runnable {
+public
+    void run()
+    {
+        System.out.println("Run");
+    }
+} class Myclass {
+public
+    static void main(String[] args)
+    {
+        Thread t1 = new Thread();
+        t1.start();
+        System.out.println("Main");
+    }
+}
+
+
+class Test extends Thread {
+public
+    void run()
+    {
+        System.out.println("Run");
+    }
+} class Myclass {
+public
+    static void main(String[] args)
+    {
+        Test t = new Test();
+        t.start();
+        System.out.println("Main");
+    }
+}
+
+
+public class Digital extends Thread {
+
+    public void run() {
+        System.out.println("Now you are here");
+    }
+
+    public static void main(String a[]) {
+        Thread run = new Thread(new Digital());
+        System.out.print("1. ");
+        run.start();
+        System.out.print("2. ");
+        run.start();
+    }
+}
+
+output :- IllegealThreadStateException
+
