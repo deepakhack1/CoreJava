@@ -1,0 +1,25 @@
+Write a Java program to create a new array list, add some colors (string) and print out the collection
+
+Write a Java program to iterate through all elements in a array list.
+
+Write a Java program to insert an element into the array list at the first position
+
+Write a Java program to retrieve an element (at a specified index) from a given array list
+
+Write a Java program to update specific array element by given element
+
+Write a Java program to replace the second element of a ArrayList with the specified element.
+
+Write a Java program to print all the elements of a ArrayList using the position of the elements
+
+Write a Java program to append the specified element to the end of a linked list.
+
+Write a Java program to iterate through all elements in a linked list.
+
+ Write a Java program to iterate through all elements in a linked list starting at the specified position
+
+Write a Java program to iterate a linked list in reverse order.
+
+ Write a Java program to remove and return the first element of a linked list
+
+Write a Java program to check if a particular element exists in a linked list.
