@@ -23,3 +23,29 @@ Write a Java program to iterate a linked list in reverse order.
  Write a Java program to remove and return the first element of a linked list
 
 Write a Java program to check if a particular element exists in a linked list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

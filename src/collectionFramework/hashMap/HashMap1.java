@@ -6,6 +6,16 @@ import java.util.Set;
 
 
 public class HashMap1 {
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
     public static void main(String[] args) {
         HashMap<Integer,String> hashMap = new HashMap<>();
 
@@ -31,7 +41,7 @@ public class HashMap1 {
         System.out.println(size);
 
          String val = hashMap.get(1);
-        System.out.println(val);
+         System.out.println(val);
 
 
     }
