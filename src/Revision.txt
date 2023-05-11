@@ -1,0 +1,192 @@
+
+Abstract class :- we can have abstract methods and non abstract methods
+abstract void sum(); abstract method can't have any body
+void sum(){  non abstract method which should have body
+}
+
+if at least one method is abstract class should be abstract
+
+Interface :- Implicitely we all have abstract have
+
+interface Abc{
+
+	void sum();  //public abstract void sum()
+	void minus();
+
+	In java 8
+
+	default void sum1(){
+	}
+
+	static void sum2(){
+	}
+}
+
+class XYZ implements Abc{
+
+	void sum(){}
+	void minus(){}
+	void sum1(){}
+	void sum2(){}  //can't be override
+}
+
+
+static :- class , method , variable
+static method can not be overrided
+
+static class always in InnerClasses
+
+class A{
+
+	static int x;
+	static int y;
+
+}
+
+A a = new A();
+A a1 = new A();
+
+// Static variable always use the same copy for different object . If you change in the variable of any object it will impact to another objects.
+
+static variable
+
+
+Polymorphism (poly means many morphism :- ways)
+
+1.Compile time polymorphism
+2. Run time polymorphism
+
+compile time polymorphism
+
+Will be handle at compile time
+
+1. Function overloading :- have more than one function having same name but diff arg or type of arg or no of arguments
+
+void show()
+void show(int a)
+void show(int a,int b)
+int show(int x, int y, int z)
+
+
+2. Run time polymorphism (Dynamic binding)
+
+1. Function overriding :- overriding the function in child classes for custom logic
+
+interface automobile{
+void engine();
+}
+
+class  TwoWheelers implenments automobile{
+
+	@Override
+	void engine{
+	-----
+}
+}
+
+class FourWheelers implements automobile{
+		@Override
+		void engine(){
+	-----------
+}
+
+Inheritance
+
+1. Single Inheritance
+2. Multilevel Inheritance
+
+class A{
+}
+class B extends A{
+}
+class C extends B{
+}
+
+
+3. Multiple Interitance
+
+class A{
+	void show(){
+	}
+
+}
+class B{
+	void show(){
+	}
+}
+class C extends A,B{  //Show method is ambigous therefore multiple inheritance can't be allowed
+}
+
+4. Hierarichal Inheritance
+class A{
+}
+class B extends{
+}
+class C extends A{
+}
+
+5. Hybrid Inheritance
+
+It is mixture of hierarichal and multiple inheritance
+since multiple is not allowed ultimately hybrid is not allowed
+
+final -> class , variable , method
+
+final class :- Immutable class (we can't extends to another class) (we can't do interitance)
+
+final class A{
+}
+class B extends A{  //It can't be allowed
+}
+
+final variable :- final variable cannot change after initiliazation , it should be initialized while u are creating
+
+final method :- final method cannot be override
+
+
+finally :- used in Exception handling
+
+try{
+}
+catch(){
+}
+finally{
+}
+
+finally is a block it always executed except one case if you do system.exit(0) in try.
+
+finally is always used to close the connection , resources.
+
+Final , finally and finalize
+
+*Java does automatically G.C.
+finalize :- used in Garbage collection
+
+finalize is method to run G.C. explicitely
+
+finalize is the method of Object class
+
+public void finalize(){
+
+	System.gc
+	Runtime.gc
+}
+
+
+String class
+
+It is immutable class (final class) cannot be changed
+
+String s = "Surya";
+String s1 = "Surya";
+
+if(s==s1)  // will be true
+//will be stored at constant pool
+
+
+String s = new String("Surya");
+String s1 = new String("Surya");
+if(s==s1)  // will be false
+
+if(s.equals(s1)) //will be true
+// will be stored at heap
